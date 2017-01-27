@@ -239,6 +239,7 @@ HARSTORAGE.Timeline.prototype.draw = function(points) {
         },
         plotOptions: {
             series: {
+                animation: false,
                 cursor: "pointer",
                 events: {
                     hide: function() {
@@ -322,6 +323,7 @@ HARSTORAGE.Histogram.prototype.draw = function(points, title) {
         },
         plotOptions: {
             series: {
+                animation: false,
                 cursor: "pointer"
             }
         },
@@ -413,6 +415,7 @@ HARSTORAGE.Columns.prototype.draw = function(points, chart_type) {
         },
         plotOptions: {
             series: {
+                animation: false,
                 cursor: "pointer",
                 events: {
                     hide: function() {
@@ -537,6 +540,7 @@ HARSTORAGE.RunInfo.prototype.resources = function (div, title, hash, units, widt
         },
         plotOptions: {            
             series: {
+                animation: false,
                 showInLegend: true
             }
         },
