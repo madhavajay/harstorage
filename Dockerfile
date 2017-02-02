@@ -9,7 +9,7 @@ RUN mkdir har && cd har
 RUN wget https://bootstrap.pypa.io/get-pip.py
 RUN python get-pip.py
 RUN pip install pylons pymongo==2.3 webob
-RUN wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/harstorage/harstorage-1.0-py2.7.egg
+RUN wget https://github.com/madhavajay/harstorage/raw/docker/harstorage-1.0-py2.7.egg
 RUN easy_install harstorage-1.0-py2.7.egg
 
 RUN paster make-config "harstorage" production.ini
